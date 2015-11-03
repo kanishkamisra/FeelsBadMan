@@ -1,0 +1,20 @@
+{
+	"name": "FeelsBadMan",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "FeelsBadMan",
+	"icons":{
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
+	"browser_action": {
+		"default_icon": "icon.png"
+    },
+    "content_scripts": [
+    	{
+    		"matches": ["http://*/*", "https://*/*"],
+    		"js": ["jquery-1.11.1.min.js", "feelsbadman.js"]
+    	}
+    ],
+    "permissions": ["tabs", "http://*/*", "https://*/*"]
+}
