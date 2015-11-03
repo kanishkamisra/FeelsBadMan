@@ -13,7 +13,7 @@
     "content_scripts": [
     	{
     		"matches": ["http://*/*", "https://*/*"],
-    		"js": ["jquery-1.11.1.min.js", "feelsbadman.js"]
+    		"js": ["jquery-1.11.3.min.js", "feelsbadman.js"]
     	}
     ],
     "permissions": ["tabs", "http://*/*", "https://*/*"]
